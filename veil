@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for d in catapult compiled handlers source; do 
+	if [ ! -d "/usr/share/veil-output/$d" ]; then
+		mkdir -p "/usr/share/veil-output/$d"
+	fi
+done
+
+cd /Veil; ./Veil.py
