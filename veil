@@ -1,8 +1,8 @@
 #!/bin/bash
 
 for d in catapult compiled handlers source; do 
-	if [ ! -d "/usr/share/veil-output/$d" ]; then
-		mkdir -p "/usr/share/veil-output/$d"
+	if [ ! -d "/var/lib/veil/output/$d" ]; then
+		mkdir -p "/var/lib/veil/output/$d"
 	fi
 done
 
