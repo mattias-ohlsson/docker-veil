@@ -3,7 +3,7 @@ FROM fedora
 
 LABEL maintainer="mattias.ohlsson@inprose.com"
 
-RUN dnf -y update && dnf -y install git which sudo python3-crypto unzip xorg-x11-server-Xvfb && dnf clean all
+RUN dnf -y update && dnf -y install git which sudo python3-crypto unzip xorg-x11-server-Xvfb ruby && dnf clean all
 
 # Install Metasploit
 RUN curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > /usr/local/bin/msfinstall
